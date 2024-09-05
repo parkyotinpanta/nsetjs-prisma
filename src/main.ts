@@ -24,12 +24,12 @@ async function bootstrap() {
   // SwaggerModule.setup('api', app, document);
 
   const config = new DocumentBuilder()
-    .setTitle('API example')
-    .setDescription('API documentation')
-    .setVersion('1.0')
+    .setTitle('API example') //ชื่อโปรแกรม ใน swagger
+    .setDescription('API documentation') // deatail ใต้ชื่อ 
+    .setVersion('1.0') // เวอร์ชั่น
     .build();
     const document = SwaggerModule.createDocument(app, config);
-    SwaggerModule.setup('api-docs', app, document);
+    SwaggerModule.setup('api-docs', app, document); // ใน string คือ url พาท
 
     
   await app.listen(3000);
