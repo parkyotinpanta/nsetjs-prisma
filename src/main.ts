@@ -13,16 +13,6 @@ async function bootstrap() {
     transform: true, // แปลงค่า input ตาม DTO
   }));
 
-  
-  // const config = new DocumentBuilder()
-  //   .setTitle('Cats example')
-  //   .setDescription('The cats API description')
-  //   .setVersion('1.0')
-  //   .addTag('cats')
-  //   .build();
-  // const document = SwaggerModule.createDocument(app, config);
-  // SwaggerModule.setup('api', app, document);
-
   const config = new DocumentBuilder()
     .setTitle('API example') //ชื่อโปรแกรม ใน swagger
     .setDescription('API documentation') // deatail ใต้ชื่อ 

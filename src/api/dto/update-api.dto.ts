@@ -2,13 +2,13 @@ import { IsEmail, IsOptional, IsString } from 'class-validator';
 import { ApiProperty } from '@nestjs/swagger';
 
 export class UpdateApiDto {
-  @ApiProperty({ example: 'John Doe', required: false })
+  @ApiProperty({ example: 'park ปาร์ค', required: false })
   @IsOptional()
   @IsString()
   name?: string;
 
-  @ApiProperty({ example: 'john.doe@example.com', required: false })
+  @ApiProperty({ example: 'test@gmail.com', required: false })
   @IsOptional()
-  @IsEmail({}, { message: 'Invalid email format' })
+  @IsEmail({}, { message: 'เมลไม่ถูกต้อง' }) // พอใช้ เม็ดตอด IsEmail ต้องมี @ เสมอ
   email?: string;
 }
